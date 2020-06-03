@@ -52,16 +52,28 @@
 
 	<style>
 	
+	img{
+		image-orientation : from-image;
+	}
+	html{
+	scroll-behavior:smooth;
+	}
+	
+	.btn-hire{
+	
+			background: #f9bf3f;
+		}
+	
 	.colorlib-footer{
 			margin-left : 100px;
 	}
 	hr{
-    height: 0.115px;
-	width:45%;
-	margin-top:0.1px;
-	margin-bottom:0.1px;
-	background : rgb(44, 152, 240);
-}
+			height: 0.115px;
+			width:45%;
+			margin-top:0.1px;
+			margin-bottom:0.1px;
+			background : rgb(44, 152, 240);
+		}
 	</style>
 	</head>
 	<body>
@@ -138,8 +150,8 @@
 			  	</div>
 			</section>
 
-			<section class="colorlib-about" data-section="about">
-				<div class="colorlib-narrow-content">
+			<section class="colorlib-about" data-section="about" >
+				<div class="colorlib-narrow-content" style="margin-top:-50%;">
 					<div class="row">
 						<div class="col-md-12">
 							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
@@ -187,7 +199,7 @@
 								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 									<div class="hire">
 										<h2>This is a personal little space of my own in the web. Read on to find out more about me</h2>
-										<button href="#" class="btn-hire" onclick="document.getElementById('edu').scrollIntoView();">Keep Exploring</button>
+										<button class="btn-hire" onclick="document.getElementById('edu').scrollIntoView();">Keep Exploring</button>
 									</div>
 								</div>
 							</div>
@@ -299,22 +311,20 @@
 						<div class="col-md-4 text-center animate-box">
 							<div class="services color-1">
 								<span class="icon">
-									<i class="icon-bulb"></i>
+									<i class="icon-data"></i>
 								</span>
 								<div class="desc">
 									<h3>Data Analytics</h3>
-									<p>Data Science and Data Visualization</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4 text-center animate-box">
 							<div class="services color-2">
 								<span class="icon">
-									<i class="icon-data"></i>
+									<i class="icon-archive2"></i>
 								</span>
 								<div class="desc">
-									<h3>Software Engineering</h3>
-									<p>Projects on SE</p>
+									<h3>Software Development</h3>
 								</div>
 							</div>
 						</div>
@@ -324,14 +334,11 @@
 									<i class="icon-layers2"></i>
 								</span>
 								<div class="desc">
-									<h3>Web Development</h3>
-									<p>Lots of projects</p>
+									<h3>Full Stack Development</h3>
 								</div>
 							</div>
 						</div>
-						
-					</div>
-					
+					</div>	
 				</div>
 			</section>
 			
@@ -486,10 +493,10 @@
 					               </div>
 
 					               <div class="timeline-label">
-					                  <span><h2>Software Development Intern, Amazon</h2> May 2019 - Aug 2019
+					                  <strong>Software Development Intern, Amazon</strong>&nbsp;- Summer 2019 <br>
 									  <i><small>Seattle, Washington</small></i>
 									  
-					                  <p><br><br>As an intern with the Alexa Voice Shopping team, worked on
+					                  <p><br>As an intern with the Alexa Voice Shopping team, worked on
 										multiple projects that involved analysing customer utterances
 										using NLP and phonetic algorithms as well as developing an
 										API based tool to automate the existing manual approach of
@@ -506,14 +513,14 @@
 					               </div>
 
 					               <div class="timeline-label">
-					                  <h2><a href="#">Research and Development Intern - Bhaskaracharya Institute of Space and Geoinformatics</a></h2>&nbsp;&nbsp; <span>Dec 2017 - Apr 2018<br>
-									  <i><b>Gandhinagar, Gujarat, India</b></i>
+					                  <strong>Research and Development Intern, Bhaskaracharya Institute of Space and Geoinformatics</strong>&nbsp; - Dec 2017 to Apr 2018<br>
+									  <i><small>Gandhinagar, Gujarat, India</small></i>
 									  
-					                  <p><br><br>Developed a lightweight web based tool to expedite the
+					                  <p><br>Developed a lightweight web based tool to expedite the
 									  development process of BISAG scientists. This tool automated
 									  the functonalities of Geoserver - a GIS software extensively
 									  used by BISAG. Also rendered a map on Geoserver using
-									  PostgreSQL as a side project
+									  PostgreSQL as a side project.
 									  </p>
 					               </div>
 					            </div>
@@ -538,110 +545,60 @@
 							<h2 class="colorlib-heading animate-box">Recent Projects</h2>
 						</div>
 					</div>
-					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-						<div class="col-md-12">
-							<p class="work-menu"><span><a href="#" class="active" id="dmlink">Data Analytics</a></span> <span><a href="#" id="selink">Software Engineering</a></span> <span><a href="#" id="wdlink">Web Development</a></span>
-						</div>
-					</div>
 					<div class="row" id="DM">
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/img-1.jpg);">
+							<div class="project" style="background-image: url(images/amazon.png);">
 								<div class="desc">
 									<div class="con">
 										<h3><a href="work.html">Amazon Product Reviews</a></h3>
-										<span>Website</span>
+										<span>Data Management (SQL), Data Mining - Birch Clustering, SVM Classification, Data Visualization</span>
 										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+											<span><a href="https://github.com/joshivaibhav/AmazonCustomerReview"><i class="icon-social-github"></i></a></span>
 										</p>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url(images/img-2.jpg);">
+							<div class="project" style="background-image: url(images/tableau.jpg);">
 								<div class="desc">
 									<div class="con">
-										<h3><a href="work.html">Finding Used Car via Tableau</a></h3>
-										<span>Animation</span>
+										<h3><a href="work.html">Finding a Used Car via Tableau</a></h3>
+										<span>Data Visualization</span>
 										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+											<span><a href="https://github.com/joshivaibhav/AmazonCustomerReview"><i class="icon-share3"></i></a></span>											
 										</p>
 									</div>
 								</div>
 							</div>
 						</div>	
 					</div>
-					<div class="row" id="SE">
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/img-1.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">SDN Controller</a></h3>
-										<span>W</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url(images/img-2.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html"></a>NodeJS</h3>
-										<span>Animation</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row" id="WEB">
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/img-1.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">DSA Visualization</a></h3>
-										<span>Website</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url(images/img-2.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">GRE Words</a></h3>
-										<span>Animation</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 					<div class="row">
-						<div class="col-md-12 animate-box">
-							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/sdn.png);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="">Custom SDN Controller</a></h3>
+										<span>Computer Networks, Python, Multithreading, Mininet</span>
+										<p class="icon">
+											<span><a href="https://github.com/joshivaibhav/CustomSDNController"><i class="icon-social-github"></i></a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url(images/dsa1.png);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Data Structures & Algorithm Visualization</a></h3>
+										<span>JavaScript, SVG.js, jQuery, CSS, HTML</span>
+										<p class="icon">
+											<span><a href="https://github.com/joshivaibhav/DSA-Visualization"><i class="icon-social-github"></i></a></span>
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -653,12 +610,13 @@
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
 							<span class="heading-meta">Read</span>
 							<h2 class="colorlib-heading">Travel Blog</h2>
+							<p>I love to travel. To go places. To explore. I have been fortunate enough to visit a lot of great places and drive on magnificent roads. India, US, Canada, France are some of the countries I have been to </p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<a href="https.html" class="blog-img"><img src="images/paris-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
 								<div class="desc">
 									<span><small>January 2020 </small> | <small> Paris, France </small>
 									<h3><a href="blog.html">A Layover Special</a></h3>
@@ -668,7 +626,7 @@
 						</div>
 						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
 							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="images/blog-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<a href="blog.html" class="blog-img"><img src="images/fall.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
 								<div class="desc">
 									<span><small>October 2019</small> | <small> Adirondacks, Upstate New York.</small>
 									<h3><a href="blog.html">Lost in the Fall</a></h3>
@@ -678,18 +636,13 @@
 						</div>
 						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="images/blog-3.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<a href="blog.html" class="blog-img"><img src="images/yose.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
 								<div class="desc">
 									<span><small>July 2019</small> | <small> Yosemite National Park, California</small>
 									<h3><a href="blog.html">The Intern Rock 'n Roll Trip </a></h3>
-									<p>I flew down from Seattle during my internship and teamed up with my best friend and a cousin (who were interning as well). We embarked on a two day trip to the world famous Yosemite Park in California. The trip had it all :- wallpapers, hiking, black bears, waterfalls, El Capitan (and oh, some rolling too).</p>
+									<p>I flew down from Seattle during my internship and teamed up with my best friend and a cousin (who were interning as well). We embarked on a two day trip to the world renowned Yosemite National Park. The trip had it all :- wallpapers, hiking, black bears, waterfalls, El Capitan (and oh, some rolling too).</p>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box">
-							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
 						</div>
 					</div>
 				</div>
@@ -794,16 +747,7 @@
 			'slow');
 			});
 	</script>
-	<script>
-		
-		$('#selink').on('click',
-			function() {
-				$('#DM').hide();
-				$('#WEB').hide();
-				$('#SE').toggle(200);
-		}
-	);
-	</script>
+	
 	</body>
 </html>
 
