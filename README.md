@@ -1,2 +1,2 @@
 # joshivaibhav.github.io
-My Tiny, Personal Corner on the World Wide Web 
+My quite little corner in the World Wide Web 
